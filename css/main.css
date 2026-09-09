@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Обертка для фона */
+.bg-wrapper {
+    position: relative;
+}
+
+.bg-blob-first {
+    position: absolute;
+    width: 634px;
+    height: 634px;
+    background: #52BDAA;
+    border-radius: 50%;
+    filter: blur(300px);
+    opacity: 0.5;
+    pointer-events: none;
+    top: -300px;
+    left: -300px;
+    z-index: 0;
+}
+
+
+.bg-blob-second {
+    position: absolute;
+    width: 634px;
+    height: 634px;
+    background: #52BDAA;
+    border-radius: 50%;
+    filter: blur(300px);
+    opacity: 0.5;
+    pointer-events: none;
+    top: 200px;
+    right: -200px;
+    z-index: 0;
+}
+
+/* Контент поверх blob'ов */
+header,
+.hero {
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    margin-top: 40px;
+    margin-bottom: 130px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 50px;
+    font-weight: 600;
+    color: #54BD95;
+    line-height: 30px;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+header nav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #A6A6A6;
+}
+
+header nav ul li.active a {
+    color: #000;
+}
+
+.account {
+    margin-left: 130px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.account .login {
+    font-size: 16px;
+    color: #A6A6A6;
+}
+
+.account .sign-up {
+    background-color: #54BD95;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #F8F8FA;
+    transition: all .3s ease;
+}
+
+.account .sign-up:hover {
+    background-color: #439676;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero--info {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+}
+
+.hero--info h1 {
+    width: 555px;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 90px;
+}
+
+.hero--info .hero--line {
+    width: 479px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.hero--info p {
+    width: 461px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.hero--info .hero--buttons {
+    display: flex;
+}
+
+.hero--info .hero--buttons button {
+    background-color: #54BD95;
+    border: none;
+    border-radius: 40px;
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.hero--info .hero--buttons button:hover {
+    background-color: #439676;
+}
+
+.hero--info .hero--buttons span {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    gap: 14px;
+    cursor: pointer;
+}
+
+.hero--info .hero--buttons span img {
+    width: 40px;
+}
