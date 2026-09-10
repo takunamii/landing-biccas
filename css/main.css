@@ -5,8 +5,6 @@ html {
 }
 
 body {
-    max-width: 1440px;
-    margin: 0 auto;
     font-size: 18px;
     font-family: "Inter", sans-serif;
     font-weight: 500;
@@ -18,7 +16,8 @@ a {
 }
 
 .container {
-    width: 100%;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 /* Обертка для фона */
@@ -63,8 +62,8 @@ header,
 }
 
 header {
-    margin-top: 40px;
-    margin-bottom: 130px;
+    margin-top: 40px !important;
+    margin-bottom: 130px !important;
     display: flex;
     align-items: center;
 }
@@ -156,7 +155,7 @@ header nav ul li.active a {
     display: flex;
 }
 
-.hero--info .hero--buttons button {
+.btn--primary {
     background-color: #54BD95;
     border: none;
     border-radius: 40px;
@@ -164,12 +163,11 @@ header nav ul li.active a {
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    align-self: flex-start;
     cursor: pointer;
     transition: all .3s ease;
 }
 
-.hero--info .hero--buttons button:hover {
+.btn--primary:hover {
     background-color: #439676;
 }
 
@@ -183,4 +181,192 @@ header nav ul li.active a {
 
 .hero--info .hero--buttons span img {
     width: 40px;
+}
+
+.partners {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.partners h3 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.partners .partners--list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partners .partners--list .partners--item span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.partners .partners--list .partners--item span h5 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #A6A6A6;
+}
+
+.service--wrapper {
+    background-color: #F9F8FE;
+    margin-bottom: 130px;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.service .service--info {
+    width: 644px;
+}
+
+.service .service--info h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.service .service--info .service--description {
+    font-size: 16px;
+    color: #A6A6A6;
+    line-height: 30px;
+}
+
+.service--ratings {
+    margin-top: 73px;
+    display: flex;
+    gap: 80px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.rating .rating--author {
+    font-weight: 700; 
+    color: #A6A6A6;
+}
+
+.service--list {
+    width: 509px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.service--item {
+    display: flex;
+    align-items: start;
+    gap: 21px;
+}
+
+.service--item img {
+    width: 60px;
+    aspect-ratio: 1 / 1;
+}
+
+.service--item .item--info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service--item .item--info h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.service--item .item--info p {
+    color: #A6A6A6;
+    line-height: 30px;
+}
+
+.features {
+    margin-bottom: 130px;
+}
+
+.features .features--info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 74px;
+}
+
+.features .features--info h1 {
+    font-size: 50px;
+    font-weight: 700;
+    width: 429px;
+}
+
+.features .features--info p {
+    width: 461px;
+    line-height: 30px;
+    color: #A6A6A6;
+}
+
+.features--list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features--list .features--item {
+    width: 364px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.features--list .features--item h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.features--list .features--item p {
+    line-height: 30px;
+    color: #A6A6A6;
+}
+
+.benefit {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+
+.benefit .benefit--info h1 {
+    width: 471px;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.benefit .benefit--info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.benefit .benefit--info li {
+  display: flex;
+  align-items: center; 
+  gap: 20px;           
+  min-height: 40px;    
+}
+
+.benefit .benefit--info li::before {
+  content: "";
+  width: 32px;         
+  height: 32px;        
+  background-image: url("/assets/images/list-style.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;      
 }
