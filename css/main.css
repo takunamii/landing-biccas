@@ -54,9 +54,22 @@ a {
     z-index: 0;
 }
 
+.bg-blob-third {
+    position: absolute;
+    width: 634px;
+    height: 634px;
+    background: #52BDAA;
+    border-radius: 50%;
+    filter: blur(300px);
+    opacity: 0.5;
+    pointer-events: none;
+    top: 3277px;
+    right: -200px;
+    z-index: 0;
+}
+
 /* Контент поверх blob'ов */
-header,
-.hero {
+header, .hero, .plan {
     position: relative;
     z-index: 1;
 }
@@ -370,3 +383,264 @@ header nav ul li.active a {
   background-repeat: no-repeat;
   flex-shrink: 0;      
 }
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 130px;
+}
+
+.plan h1 {
+    font-size: 50px;
+    font-weight: 700;
+    width: 492px;
+    text-align: center;
+    line-height: 73px;
+}
+
+.plan p {
+    font-weight: 700;
+    color: #A6A6A6;
+}
+
+.plan .period {
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.plan .period button {
+    padding: 15px 45px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.plan .period .active {
+    background-color: #54BD95;
+    color: #fff;
+}
+
+.plan .plan--categories {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.plan .plan--item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.plan .plan--item .price {
+    display: flex;
+    gap: 4px;
+    color: #000;
+}
+
+.plan .plan--item.business .price p {
+    width: fit-content
+}
+
+.plan .plan--item .price p {
+    font-size: 50px;
+    width: fit-content;
+    color: #000;
+    line-height: 50px;
+}
+
+.plan .plan--item.pro .price {
+    color: #fff;
+}
+
+.plan .plan--item.pro {
+    background-color: #54BD95;
+}
+
+.plan .plan--item h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.plan .plan--item.pro h3 {
+    color: #fff;
+}
+
+.plan .plan--item p {
+    width: 210px;
+    text-align: center;
+    line-height: 27px;
+    font-weight: 500;
+}
+
+.plan .plan--item.pro p {
+    color: #fff;
+}
+.plan .plan--item.business p {
+    width: 251px;
+}
+
+.plan .plan--item.pro .economy {
+    background-color: #85DAB9;
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.plan .plan--item .plan--attachments {
+    margin-top: 10px;
+    background-color: #F9FAFB;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.plan .plan--item .plan--attachments ul {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.plan .plan--item .plan--attachments ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.plan .plan--item .plan--attachments ul li::before {
+    content: "";
+    width: 26px;         
+    height: 26px;        
+    background-image: url("/assets/images/list-style.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;      
+}
+
+.plan .plan--item .plan--attachments button {
+    background-color: #fff;
+    color: #54BD95;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+
+.plan .plan--item.pro .plan--attachments button {
+    box-shadow: none;
+    background-color: #54BD95;
+    color: #fff;
+}
+
+.footer--wrapper {
+    background-color: #161C28;
+}
+
+footer p, a {
+    color: #A6A6A6;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+footer .footer--right {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer--right .footer--response {
+    width: 461px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 170px;
+}
+
+footer .footer--right .footer--response .quote {
+    width: 45px;
+}
+
+footer .footer--right .footer--response .people-group {
+    width: 410px;
+}
+
+footer .footer--right .footer--email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer .footer--right .footer--email h3 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #54BD95;
+}
+
+footer .footer--right .footer--email p {
+    line-height: 30px;
+}
+
+footer .footer--right .footer--email .input {
+    width: 410px;
+    position: relative;
+}
+
+footer .footer--right .footer--email .input input {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid #A6A6A6;
+    border-radius: 70px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 20px;
+    color: #fff;
+}
+
+footer .footer--right .footer--email .input input::placeholder {
+    color: #A6A6A6;
+}
+
+footer .footer--right .footer--email .input button {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    background-color: #54BD95;
+    border-radius: 50%;
+    border: none;
+    width: 46px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer--right .footer--email .input button img {
+    width: 24px;
+    aspect-ratio: 1 / 1;
+}
+
+
