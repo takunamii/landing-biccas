@@ -378,7 +378,7 @@ header nav ul li.active a {
   content: "";
   width: 32px;         
   height: 32px;        
-  background-image: url("/assets/images/list-style.png");
+  background-image: url("./assets/images/list-style.png");
   background-size: contain;
   background-repeat: no-repeat;
   flex-shrink: 0;      
@@ -528,7 +528,7 @@ header nav ul li.active a {
     content: "";
     width: 26px;         
     height: 26px;        
-    background-image: url("/assets/images/list-style.png");
+    background-image: url("./assets/images/list-style.png");
     background-size: contain;
     background-repeat: no-repeat;
     flex-shrink: 0;      
