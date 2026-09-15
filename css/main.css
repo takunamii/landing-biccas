@@ -101,6 +101,11 @@ header nav ul li a {
     font-size: 16px;
     font-weight: 500;
     color: #A6A6A6;
+    transition: all .2s ease;
+}
+
+header nav ul li a:hover {
+    color: #6f6f6f;
 }
 
 header nav ul li.active a {
@@ -117,6 +122,11 @@ header nav ul li.active a {
 .account .login {
     font-size: 16px;
     color: #A6A6A6;
+    transition: all .2s ease;
+}
+
+.account .login:hover {
+    color: #6f6f6f;
 }
 
 .account .sign-up {
@@ -184,7 +194,7 @@ header nav ul li.active a {
     background-color: #439676;
 }
 
-.hero--info .hero--buttons span {
+.hero--info .hero--buttons button {
     display: flex;
     align-items: center;
     margin-left: 40px;
@@ -192,8 +202,21 @@ header nav ul li.active a {
     cursor: pointer;
 }
 
-.hero--info .hero--buttons span img {
+.hero--info .hero--buttons button img {
     width: 40px;
+}
+
+.hero--info .hero--buttons .demo {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    transition: all .2s ease;
+    border-radius: 40px;
+    padding: 0 10px;
+}
+
+.hero--info .hero--buttons .demo:hover {
+    background-color: #ececec;
 }
 
 .partners {
@@ -378,7 +401,7 @@ header nav ul li.active a {
   content: "";
   width: 32px;         
   height: 32px;        
-  background-image: url("./assets/images/list-style.png");
+  background-image: url(../assets/images/list-style.png);
   background-size: contain;
   background-repeat: no-repeat;
   flex-shrink: 0;      
@@ -421,6 +444,7 @@ header nav ul li.active a {
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+    transition: all .3s ease;
 }
 
 .plan .period .active {
@@ -528,7 +552,7 @@ header nav ul li.active a {
     content: "";
     width: 26px;         
     height: 26px;        
-    background-image: url("./assets/images/list-style.png");
+    background-image: url(../assets/images/list-style.png);
     background-size: contain;
     background-repeat: no-repeat;
     flex-shrink: 0;      
@@ -536,6 +560,7 @@ header nav ul li.active a {
 
 .plan .plan--item .plan--attachments button {
     background-color: #fff;
+    height: 64px;
     color: #54BD95;
     border: none;
     border-radius: 20px;
@@ -543,6 +568,12 @@ header nav ul li.active a {
     font-size: 18px;
     font-weight: 600;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transition: all .2s ease;
+}
+
+.plan .plan--item .plan--attachments button:hover {
+    cursor: pointer;
+    background-color: #ecebeb;
 }
 
 .plan .plan--item.pro .plan--attachments button {
@@ -551,6 +582,9 @@ header nav ul li.active a {
     color: #fff;
 }
 
+.plan .plan--item.pro .plan--attachments button:hover {
+    background-color: #49a783;
+}
 .footer--wrapper {
     background-color: #161C28;
     padding-top: 130px;
@@ -614,6 +648,20 @@ footer .footer-group-1 .footer-response .group-people img {
 footer .footer-group-1 .footer-response .group-people button {
     background-color: transparent;
     border: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    height: 66px;
+    transition: all .2s ease;
+}
+
+footer .footer-group-1 .footer-response .group-people button img {
+    user-select: none;
+}
+
+footer .footer-group-1 .footer-response .group-people button:hover {
+    background-color: rgba(255, 255, 255, 0.108);
+    cursor: pointer;
 }
 
 footer .footer-group-1 form {
@@ -675,6 +723,14 @@ footer .footer-group-1 form .form-body button {
     border-radius: 10px;
     color: #fff;
     height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .2s ease;
+}
+
+footer .footer-group-1 form .form-body button:hover {
+    background-color: #439676;
+    cursor: pointer;
 }
 
 footer .footer-group-1 form .form-body .start-free {
@@ -754,6 +810,12 @@ footer .footer-group-2 .search-bar button {
     border-radius: 50%;
     background-color: #54BD95;
     border: none;
+    transition: all .2s ease;
+}
+
+footer .footer-group-2 .search-bar button:hover {
+    background-color: #439676;
+    cursor: pointer;
 }
 
 footer .footer-group-3 {
