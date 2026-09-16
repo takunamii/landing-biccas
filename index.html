@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biccas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <main class="bg-wrapper">
         <!-- Свечение на бэкграунде -->
-        <div class="bg-blob-first"></div>
-        <div class="bg-blob-second"></div>
-        <div class="bg-blob-third"></div>
+        <div class="bg-blob bg-blob--first"></div>
+        <div class="bg-blob bg-blob--second"></div>
 
         <header class="container">
             <a href="" class="logo">Biccas</a>
-            <nav>
+            <nav class="menu" id="menu">
                 <ul>
                     <li class="active"><a href="">Home</a></li>
                     <li><a href="">Product</a></li>
@@ -24,24 +26,29 @@
                     <li><a href="">Blog</a></li>
                     <li><a href="">About Us</a></li>
                 </ul>
+                <div class="account">
+                    <a class="login" href="">Login</a>
+                    <a class="sign-up" href="">Sign Up</a>
+                </div>
             </nav>
-            <div class="account">
-                <a class="login" href="">Login</a>
-                <a class="sign-up" href="">Sign Up</a>
-            </div>
+            <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </header>
 
         <section class="container hero">
             <div class="hero--info">
                 <h1>We’re here to Increase your Productivity</h1>
-                <img class="hero--line" src="./assets/images/hero-line.png" alt="">
+                <img class="hero--line" src="./assets/images/hero-line.png" alt="" width="487" height="34">
                 <p>Let's make your work more organized and easier using the Taskio Dashboard with many of the latest features in managing work every day.</p>
                 <div class="hero--buttons">
                     <button class="btn--primary">Try free trial</button>
-                    <button class="demo"><img src="./assets/images/hero-play.png" alt="">View Demo</button>
+                    <button class="demo"><img src="./assets/images/hero-play.png" alt="" width="40" height="40">View Demo</button>
                 </div>
             </div>
-            <img src="/assets/images/hero-image.png" alt="">
+            <img class="hero--image" src="./assets/images/hero-image.png" alt="" width="590" height="559" fetchpriority="high">
         </section>
 
         <section class="container partners">
@@ -49,31 +56,31 @@
             <ul class="partners--list">
                 <li class="partners--item">
                     <span>
-                        <img src="./assets//images/unsplash-logo.png" alt="">
+                        <img src="./assets/images/unsplash-logo.png" alt="" width="34" height="32" loading="lazy" decoding="async">
                         <h5>Unsplash</h5>
                     </span>
                 </li>
                 <li class="partners--item">
                     <span>
-                        <img src="./assets/images/notion-logo.png" alt="">
+                        <img src="./assets/images/notion-logo.png" alt="" width="38" height="35" loading="lazy" decoding="async">
                         <h5>Notion</h5>
                     </span>
                 </li>
                 <li class="partners--item">
                     <span>
-                        <img src="./assets/images/intercom-logo.png" alt="">
+                        <img src="./assets/images/intercom-logo.png" alt="" width="30" height="30" loading="lazy" decoding="async">
                         <h5>INTERCOM</h5>
                     </span>
                 </li>
                 <li class="partners--item">
                     <span>
-                        <img src="./assets/images/descript-logo.png" alt="">
+                        <img src="./assets/images/descript-logo.png" alt="" width="23" height="30" loading="lazy" decoding="async">
                         <h5>descript</h5>
                     </span>
                 </li>
                 <li class="partners--item">
                     <span>
-                        <img src="./assets/images/grammarly-logo.png" alt="">
+                        <img src="./assets/images/grammarly-logo.png" alt="" width="30" height="30" loading="lazy" decoding="async">
                         <h5>grammarly</h5>
                     </span>
                 </li>
@@ -83,16 +90,16 @@
         <div class="service--wrapper">
             <section class="service container">
                 <div class="service--info">
-                    <h1>How we support our partner all over the world</h1>
+                    <h2>How we support our partner all over the world</h2>
                     <p class="service--description">SaaS has become a common delivery model for many business applications, including office software, messaging software, payroll processing software, DBMS software, management software</p>
                     <div class="service--ratings">
                         <div class="ratings--databricks rating">
                             <span>
-                                <img src="./assets/images/yellow-star.png" alt="">
-                                <img src="./assets/images/yellow-star.png" alt="">
-                                <img src="./assets/images/yellow-star.png" alt="">
-                                <img src="./assets/images/yellow-star.png" alt="">
-                                <img src="./assets/images/yellow-star.png" alt="">
+                                <img src="./assets/images/yellow-star.png" alt="" width="25" height="24" loading="lazy" decoding="async">
+                                <img src="./assets/images/yellow-star.png" alt="" width="25" height="24" loading="lazy" decoding="async">
+                                <img src="./assets/images/yellow-star.png" alt="" width="25" height="24" loading="lazy" decoding="async">
+                                <img src="./assets/images/yellow-star.png" alt="" width="25" height="24" loading="lazy" decoding="async">
+                                <img src="./assets/images/yellow-star.png" alt="" width="25" height="24" loading="lazy" decoding="async">
                             </span>
                             <p class="rating--num-rate"><strong>4.9</strong> / 5 rating</p>
                             <p class="rating--author">databricks</p>
@@ -100,11 +107,11 @@
 
                         <div class="ratings--chainalysis rating">
                             <span>
-                                <img src="./assets/images/yellow-star.png" alt="">
-                                <img src="./assets/images/yellow-star.png" alt="">
-                                <img src="./assets/images/yellow-star.png" alt="">
-                                <img src="./assets/images/yellow-star.png" alt="">
-                                <img src="./assets/images/gray-star.png" alt="">
+                                <img src="./assets/images/yellow-star.png" alt="" width="25" height="24" loading="lazy" decoding="async">
+                                <img src="./assets/images/yellow-star.png" alt="" width="25" height="24" loading="lazy" decoding="async">
+                                <img src="./assets/images/yellow-star.png" alt="" width="25" height="24" loading="lazy" decoding="async">
+                                <img src="./assets/images/yellow-star.png" alt="" width="25" height="24" loading="lazy" decoding="async">
+                                <img src="./assets/images/gray-star.png" alt="" width="25" height="24" loading="lazy" decoding="async">
                             </span>
                             <p class="rating--num-rate"><strong>4.8</strong> / 5 rating</p>
                             <p class="rating--author">Chainalysis</p>
@@ -114,7 +121,7 @@
 
                 <div class="service--list">
                     <div class="service--item">
-                        <img src="./assets/images/publishing.png" alt="">
+                        <img src="./assets/images/publishing.png" alt="" width="78" height="78" loading="lazy" decoding="async">
                         <div class="item--info">
                             <h3>Publishing</h3>
                             <p>Plan, collaborate, and publish your content that drives meaningful engagement and growth for your brand</p>
@@ -122,7 +129,7 @@
                     </div>
 
                     <div class="service--item">
-                        <img src="./assets/images/analytics.png" alt="">
+                        <img src="./assets/images/analytics.png" alt="" width="78" height="78" loading="lazy" decoding="async">
                         <div class="item--info">
                             <h3>Analytics</h3>
                             <p>Analyze your performance and create gorgeous reports</p>
@@ -130,7 +137,7 @@
                     </div>
 
                     <div class="service--item">
-                        <img src="./assets/images/engagement.png" alt="">
+                        <img src="./assets/images/engagement.png" alt="" width="78" height="78" loading="lazy" decoding="async">
                         <div class="item--info">
                             <h3>Engagement</h3>
                             <p>Quickly navigate you and engage with your audience</p>
@@ -142,24 +149,24 @@
         
         <section class="container features">
             <div class="features--info">
-                <h1>Our Features you can get</h1>
+                <h2>Our Features you can get</h2>
                 <p>We offer a variety of interesting features that can help increase your productivity at work and manage your project easily</p>
                 <button class="btn--primary">Get Started</button>
             </div>
 
             <div class="features--list">
                 <div class="features--item">
-                    <img src="./assets/images/collboration.png" alt="">
+                    <img src="./assets/images/collboration.png" alt="" width="364" height="430" loading="lazy" decoding="async">
                     <h3>Collaboration Teams</h3>
                     <p>Here you can handle projects together with team virtually</p>
                 </div>
                 <div class="features--item">
-                    <img src="./assets/images/cloud.png" alt="">
+                    <img src="./assets/images/cloud.png" alt="" width="364" height="430" loading="lazy" decoding="async">
                     <h3>Cloud Storage</h3>
                     <p>No need to worry about storage because we provide storage up to 2 TB</p>
                 </div>
                 <div class="features--item">
-                    <img src="./assets/images/data.png" alt="">
+                    <img src="./assets/images/data.png" alt="" width="364" height="430" loading="lazy" decoding="async">
                     <h3>Daily Analytics</h3>
                     <p>We always provide useful information to make it easier for you every day</p>
                 </div>
@@ -168,7 +175,7 @@
 
         <section class="container benefit">
             <div class="benefit--info">
-                <h1>What Benefit Will You Get</h1>
+                <h2>What Benefit Will You Get</h2>
                 <ul>
                     <li>Free Consulting With Expert Saving Money</li>
                     <li>Online Banking</li>
@@ -177,11 +184,12 @@
                     <li>Online Transaction</li>
                 </ul>
             </div>
-            <img src="./assets/images/amanda-young.png" alt="">
+            <img class="benefit--image" src="./assets/images/amanda-young.png" alt="" width="583" height="556" loading="lazy" decoding="async">
         </section>
 
         <section class="container plan">
-            <h1>Choose Plan That’s Right For You</h1>
+            <div class="bg-blob bg-blob--third"></div>
+            <h2>Choose Plan That’s Right For You</h2>
             <p>Choose plan that works best for you, feel free to contact us</p>
             <span class="period">
                 <button class="period-monthly">Bill Monthly</button>
@@ -191,7 +199,7 @@
                 <div class="plan--item">
                     <h3>Free</h3>
                     <p>Have a go  and test your  superpowers</p>
-                    <span class="price">$<p>0</p></span>
+                    <span class="price">$<b>0</b></span>
                     <div class="plan--attachments">
                         <ul>
                             <li>2 Users</li>
@@ -206,7 +214,7 @@
                 <div class="plan--item pro">
                     <h3>Pro</h3>
                     <p>Experiment the power of infinite possibilities</p>
-                    <span class="price">$<p>8</p></span>
+                    <span class="price">$<b>8</b></span>
                     <span class="economy">Save $50 a year</span>
                     <div class="plan--attachments">
                         <ul>
@@ -222,7 +230,7 @@
                 <div class="plan--item business">
                     <h3>Business</h3>
                     <p>Unveil new superpowers and join the Design League</p>
-                    <span class="price">$<p>16</p></span>
+                    <span class="price">$<b>16</b></span>
                     <div class="plan--attachments">
                         <ul>
                             <li>All the features of pro plan</li>
@@ -241,32 +249,32 @@
             <footer class="container">
                 <div class="footer-group-1">
                     <div class="footer-response">
-                        <h1>People are Saying About DoWhith</h1>
+                        <h2>People are Saying About DoWhith</h2>
                         <p>Everything you need to accept payment and grow your money or manage anywhere on planet</p>
-                        <img src="./assets/images/quote.png" alt="">
+                        <img src="./assets/images/quote.png" alt="" width="45" height="38" loading="lazy" decoding="async">
                         <p>I am very helped by this E-wallet application , my days are very easy to use this application and it's very helpful in my life , even I can pay a short time 😍</p>
                         <p>_ Aria Zinanrio</p>
                         <div class="group-people">
-                            <img src="./assets/images/man-1.png" alt="">
-                            <img src="./assets/images/man-2.png" alt="">
-                            <img src="./assets/images/man-3.png" alt="">
-                            <img src="./assets/images/man-4.png" alt="">
-                            <button><img src="./assets/images/button-man.png" alt=""></button>
+                            <img src="./assets/images/man-1.png" alt="" width="66" height="66" loading="lazy" decoding="async">
+                            <img src="./assets/images/man-2.png" alt="" width="66" height="66" loading="lazy" decoding="async">
+                            <img src="./assets/images/man-3.png" alt="" width="66" height="66" loading="lazy" decoding="async">
+                            <img src="./assets/images/man-4.png" alt="" width="66" height="66" loading="lazy" decoding="async">
+                            <button><img src="./assets/images/button-man.png" alt="" width="66" height="66" loading="lazy" decoding="async"></button>
                         </div>
                     </div>
                     <form action="">
                         <div class="form-logo">
-                            <img src="./assets/images/get-started-icon.png" alt="">
+                            <img src="./assets/images/get-started-icon.png" alt="" width="73" height="86" loading="lazy" decoding="async">
                             <h3>Get Started</h3>
                         </div>
                         <div class="form-body">
                             <span>
                                 <label for="email">Email</label>
-                                <input type="text" id="email" placeholder="Enter your email">
+                                <input type="email" id="email" name="email" autocomplete="email" placeholder="Enter your email">
                             </span>
                             <span>
                                 <label for="message">Message</label>
-                                <textarea name="" id="message" placeholder="What are you say?"></textarea>
+                                <textarea name="message" id="message" placeholder="What are you say?"></textarea>
                             </span>
                             <button>Request Demo</button>
                             <p class="start-free">or <a href="">Start Free Trial</a></p>
@@ -279,8 +287,8 @@
                         <h3>Biccas</h3>
                         <p>Get started now try our product</p>
                         <div class="search-bar">
-                            <input type="text" placeholder="Enter your email here">
-                            <button><img src="./assets/images/enter-icon.png" alt=""></button>
+                            <input type="email" name="newsletter" aria-label="Enter your email here" placeholder="Enter your email here">
+                            <button aria-label="Submit email"><img src="./assets/images/enter-icon.png" alt="" width="24" height="24" loading="lazy" decoding="async"></button>
                         </div>
                     </div>
                     <nav>
@@ -311,7 +319,7 @@
                     <p>© 2022 Biccas Inc. Copyright and rights reserved</p>
                     <div>
                         <a href="">Terms and Conditions</a>
-                        <img src="./assets/images/dort.png" alt="">
+                        <img src="./assets/images/dort.png" alt="" width="4" height="4" loading="lazy" decoding="async">
                         <a href="">Privacy Policy</a>
                     </div>
                 </div>
