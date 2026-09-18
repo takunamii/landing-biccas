@@ -4,7 +4,7 @@
 
 ## Демо
 
-https://extraordinary-jalebi-8cb5a7.netlify.app/
+landing-biccas.netlify.app
 
 ## Стек
 
