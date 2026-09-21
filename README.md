@@ -4,11 +4,11 @@
 
 **Live Demo:** https://landing-biccas.netlify.app/
 
-Адаптивный SaaS landing page **Biccas**, созданный по макету из Figma с использованием чистого HTML, CSS и Vanilla JavaScript.
+A responsive SaaS landing page built from a Figma design using HTML, CSS, and Vanilla JavaScript.
 
-Проект реализован без фреймворков и сборщиков. Основное внимание уделено responsive design, accessibility, fluid typography и производительности.
+The project focuses on responsive design, accessibility, fluid typography, performance optimization, and accurate implementation of the original interface without using frontend frameworks.
 
-## ✨ Features
+## Features
 
 * Fully responsive layout
 * Mobile burger menu
@@ -16,16 +16,17 @@
 * Monthly / Yearly pricing switcher
 * Responsive pricing cards
 * Fluid typography with `clamp()`
-* CSS Grid & Flexbox
+* CSS Grid and Flexbox
 * `:focus-visible` support
 * `aria-expanded` support
 * `prefers-reduced-motion` support
-* Lazy loading images
-* Async image decoding
+* Lazy-loaded images
+* Asynchronous image decoding
 * Explicit image dimensions
+* Optimized font loading
 * No JavaScript frameworks or libraries
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * HTML5
 * CSS3
@@ -36,23 +37,23 @@
 * Media Queries
 * Responsive Design
 
-## 📋 Project Overview
+## Project Overview
 
 Biccas is a modern SaaS landing page focused on productivity and business management.
 
-The project was implemented from a Figma design using only HTML, CSS and Vanilla JavaScript.
+The project was implemented from a Figma design using only HTML, CSS, and Vanilla JavaScript.
 
-The main goal was to reproduce the original design while maintaining responsive behavior, accessibility and good loading performance across different screen sizes.
+The main goal was to reproduce the original design while maintaining responsive behavior, accessibility, and good loading performance across different devices.
 
-## 🧩 Main Sections
+## Main Sections
 
 ### Navigation
 
-Desktop navigation switches to a fullscreen mobile menu on smaller screens.
+The desktop navigation switches to a fullscreen mobile menu on smaller screens.
 
 The mobile navigation includes:
 
-* burger button;
+* burger menu button;
 * fullscreen overlay;
 * animated menu state;
 * `aria-expanded` support.
@@ -66,9 +67,9 @@ Monthly
 Yearly
 ```
 
-Pricing cards automatically adapt to smaller screens.
+Pricing cards automatically adapt to smaller screen sizes.
 
-## ♿ Accessibility
+## Accessibility
 
 The project includes several accessibility practices:
 
@@ -79,7 +80,7 @@ The project includes several accessibility practices:
 * keyboard-friendly navigation;
 * appropriate interactive states.
 
-## ⚡ Performance
+## Performance
 
 Images below the initial viewport use:
 
@@ -93,11 +94,11 @@ and:
 decoding="async"
 ```
 
-Images also have explicit `width` and `height` attributes to reduce layout shifts.
+Images also have explicit `width` and `height` attributes to reduce layout shifts during page loading.
 
-Fonts use `preconnect` for improved loading performance.
+Fonts use `preconnect` to improve loading performance.
 
-## 📱 Responsive Design
+## Responsive Design
 
 The layout adapts to different screen sizes.
 
@@ -107,10 +108,10 @@ The layout adapts to different screen sizes.
 | `960–1240px` | Layout compression and wrapping    |
 | `≤ 960px`    | Sections switch to a column layout |
 | `≤ 860px`    | Mobile navigation                  |
-| `≤ 700px`    | Pricing cards become a column      |
+| `≤ 700px`    | Pricing cards switch to a column   |
 | `≤ 420px`    | Additional mobile adjustments      |
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 landing-biccas/
@@ -125,19 +126,13 @@ landing-biccas/
 └── Design.png
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 No dependencies are required.
 
-Simply open:
+You can open `index.html` directly in your browser.
 
-```text
-index.html
-```
-
-in your browser.
-
-Or start a local server:
+Alternatively, run a local development server:
 
 ```bash
 python -m http.server 5500
@@ -149,7 +144,7 @@ Then open:
 http://localhost:5500
 ```
 
-## 🎨 Design
+## Design
 
 The project was implemented based on a Figma design.
 
@@ -159,7 +154,7 @@ The original design reference is included in:
 Design.png
 ```
 
-## 🎯 Purpose
+## Project Goals
 
 This project was created to practice:
 
@@ -172,6 +167,6 @@ This project was created to practice:
 * fluid typography;
 * Figma-to-code implementation.
 
-## 📄 License
+## License
 
 This project is intended for educational and portfolio purposes.
