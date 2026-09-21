@@ -1,54 +1,177 @@
-# Biccas — адаптивный лендинг
+# Biccas
 
-Одностраничный лендинг SaaS-продукта, свёрстанный по макету (Design.png) на чистом HTML/CSS/JS — без фреймворков и сборщиков.
+[![Demo](https://img.shields.io/badge/demo-live-success)](https://landing-biccas.netlify.app/)
 
-## Демо
+**Live Demo:** https://landing-biccas.netlify.app/
 
-landing-biccas.netlify.app
+Адаптивный SaaS landing page **Biccas**, созданный по макету из Figma с использованием чистого HTML, CSS и Vanilla JavaScript.
 
-## Стек
+Проект реализован без фреймворков и сборщиков. Основное внимание уделено responsive design, accessibility, fluid typography и производительности.
 
-- **HTML5** — семантическая разметка, один `h1` на страницу, валидная вложенность
-- **CSS3** — custom properties, `clamp()` для плавной типографики и отступов, flexbox, media queries
-- **Vanilla JS** — бургер-меню и переключатель тарифов
+## ✨ Features
 
-## Особенности вёрстки
+* Fully responsive layout
+* Mobile burger menu
+* Fullscreen mobile navigation
+* Monthly / Yearly pricing switcher
+* Responsive pricing cards
+* Fluid typography with `clamp()`
+* CSS Grid & Flexbox
+* `:focus-visible` support
+* `aria-expanded` support
+* `prefers-reduced-motion` support
+* Lazy loading images
+* Async image decoding
+* Explicit image dimensions
+* No JavaScript frameworks or libraries
 
-- Адаптив от 320px до десктопа: контейнер `min(1440px, calc(100% - …))`, жидкие размеры через `clamp()`
-- Бургер-меню на `max-width: 860px`: полноэкранный оверлей, выезжающий сверху, с анимацией иконки
-- Разумное поведение при переносе: карточки тарифов и логотипы партнёров центрируются, Pro-тариф при стеке уходит в конец
-- Доступность: `:focus-visible`, `aria-expanded` у бургера, `prefers-reduced-motion`, hover-эффекты только для устройств с курсором
-- Производительность: `loading="lazy"` + `decoding="async"` для изображений ниже первого экрана, явные `width/height` у картинок (без CLS), шрифт через `preconnect`
+## 🛠️ Tech Stack
 
-## Структура проекта
+* HTML5
+* CSS3
+* Vanilla JavaScript
+* CSS Custom Properties
+* CSS Grid
+* Flexbox
+* Media Queries
+* Responsive Design
 
+## 📋 Project Overview
+
+Biccas is a modern SaaS landing page focused on productivity and business management.
+
+The project was implemented from a Figma design using only HTML, CSS and Vanilla JavaScript.
+
+The main goal was to reproduce the original design while maintaining responsive behavior, accessibility and good loading performance across different screen sizes.
+
+## 🧩 Main Sections
+
+### Navigation
+
+Desktop navigation switches to a fullscreen mobile menu on smaller screens.
+
+The mobile navigation includes:
+
+* burger button;
+* fullscreen overlay;
+* animated menu state;
+* `aria-expanded` support.
+
+### Pricing
+
+The pricing section includes a billing period switcher:
+
+```text
+Monthly
+Yearly
 ```
-├── index.html        # разметка страницы
+
+Pricing cards automatically adapt to smaller screens.
+
+## ♿ Accessibility
+
+The project includes several accessibility practices:
+
+* semantic HTML;
+* `aria-expanded`;
+* `:focus-visible`;
+* `prefers-reduced-motion`;
+* keyboard-friendly navigation;
+* appropriate interactive states.
+
+## ⚡ Performance
+
+Images below the initial viewport use:
+
+```html
+loading="lazy"
+```
+
+and:
+
+```html
+decoding="async"
+```
+
+Images also have explicit `width` and `height` attributes to reduce layout shifts.
+
+Fonts use `preconnect` for improved loading performance.
+
+## 📱 Responsive Design
+
+The layout adapts to different screen sizes.
+
+| Breakpoint   | Behavior                           |
+| ------------ | ---------------------------------- |
+| `> 1240px`   | Desktop layout                     |
+| `960–1240px` | Layout compression and wrapping    |
+| `≤ 960px`    | Sections switch to a column layout |
+| `≤ 860px`    | Mobile navigation                  |
+| `≤ 700px`    | Pricing cards become a column      |
+| `≤ 420px`    | Additional mobile adjustments      |
+
+## 📁 Project Structure
+
+```text
+landing-biccas/
+├── index.html
 ├── css/
-│   ├── reset.css     # сброс стилей + box-sizing
-│   └── main.css      # основная вёрстка и адаптив
+│   ├── reset.css
+│   └── main.css
 ├── javascript/
-│   └── main.js       # бургер-меню, переключатель Bill Monthly/Yearly
-├── assets/images/    # графика
-└── Design.png        # исходный макет
+│   └── main.js
+├── assets/
+│   └── images/
+└── Design.png
 ```
 
-## Запуск
+## 🚀 Getting Started
 
-Статическая страница — достаточно открыть `index.html` в браузере, либо поднять любой локальный сервер:
+No dependencies are required.
+
+Simply open:
+
+```text
+index.html
+```
+
+in your browser.
+
+Or start a local server:
 
 ```bash
 python -m http.server 5500
-# затем открой http://localhost:5500
 ```
 
-## Брейкпоинты
+Then open:
 
-| Ширина | Поведение |
-|---|---|
-| > 1240px | десктоп как в макете (1440px) |
-| 960–1240px | сжатие, перенос карточек с центрированием |
-| ≤ 960px | двухколоночные секции складываются в стек |
-| ≤ 860px | бургер-меню |
-| ≤ 700px | тарифы в колонку, Pro — последним |
-| ≤ 420px | финальное уплотнение текста и кнопок |
+```text
+http://localhost:5500
+```
+
+## 🎨 Design
+
+The project was implemented based on a Figma design.
+
+The original design reference is included in:
+
+```text
+Design.png
+```
+
+## 🎯 Purpose
+
+This project was created to practice:
+
+* responsive web development;
+* semantic HTML;
+* modern CSS;
+* Vanilla JavaScript;
+* accessibility;
+* performance optimization;
+* fluid typography;
+* Figma-to-code implementation.
+
+## 📄 License
+
+This project is intended for educational and portfolio purposes.
